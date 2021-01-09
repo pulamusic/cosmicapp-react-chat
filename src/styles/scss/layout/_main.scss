@@ -1,0 +1,69 @@
+/* ======== Main ======== */
+
+.Main {
+  @include flex-column;
+  .Main-header {
+    display: block;
+    padding: 1em;
+    margin: 0 1em;
+    h1 {
+      text-align: center;
+      margin: 1em 0;
+      padding: 0 0 0.5em 0;
+      letter-spacing: 0.8em;
+      font-size: 5em;
+      font-weight: 200;
+      font-style: italic;
+    }
+    figure {
+      @include flex-column;
+      text-align: center;
+      margin: 0 0 0 2em;
+      float: right;
+      border: $border;
+      border-radius: $border-radius;
+      img {
+        @include reset-0;
+        width: 100%;
+        height: auto;
+      }
+      figcaption {
+        padding: 0.5em;
+      }
+    }
+  }
+  .Main-sections {
+    @include flex-row;
+    justify-content: center;
+  }
+  .Main-students {
+    @include flex-row;
+    margin: 0.8em;
+    padding: 1.4em;
+    border: $border;
+    border-radius: $border-radius;
+    header {
+      @include inline-flex-center;
+      width: 30%;
+      padding: 1em;
+      margin: 0 1em;
+      border-right: $border;
+      h1 {
+        text-align: center;
+        padding: 0.5em;
+        line-height: 2.4em;
+      }
+    }
+    .list {
+      @include inline-flex-center;
+      padding: 0.5em;
+      width: 70%;
+      li {
+        margin: 0.4em;
+        padding: 0.8em;
+        border: $border;
+        border-radius: $border-radius;
+      }
+    }
+  }
+}

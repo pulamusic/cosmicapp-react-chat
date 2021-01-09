@@ -1,0 +1,213 @@
+//
+// ======== Typography ========
+//
+
+// Definitely change the typography
+$body-font-family: 'Roboto', sans-serif;
+$code-font-family: 'Source Code Pro', monospace;
+$root-font-size: 16px !default; // Base font-size for rems
+$body-line-height: 1.4 !default;
+$content-line-height: 1.6 !default;
+$body-heading-line-height: 1.25 !default;
+
+//
+// ======== Font size ========
+// `-sm` suffix is the size at the small (and above) media query
+//
+
+$font-size-1: 0.5625em !default;
+$font-size-1-sm: 0.625em !default;
+$font-size-2: 0.6875em !default; //h4 - uppercased!, h6 not uppercased, text-small
+$font-size-3: 0.75em !default; //h5
+$font-size-4: 0.875em !default;
+
+$font-size-5: 1em !default; //h3 - this is the 1em font size.
+
+$font-size-6: 1.125em !default; //h2
+$font-size-7: 1.5em !default;
+$font-size-8: 2em !default; //h1
+$font-size-9: 2.25em !default;
+$font-size-10: 2.625em !default;
+$font-size-10-sm: 3em !default;
+
+//
+// ======== Font weight ========
+//
+
+$font-weight-2: 200;
+$font-weight-3: 300;
+$font-weight-4: 400;
+$font-weight-5: 500;
+$font-weight-6: 600;
+$font-weight-7: 700;
+$font-weight-9: 900;
+
+//
+// ======== Colors ========
+//
+
+$white: rgba(255, 255, 255, 1) !default;
+$off-white: rgba(244, 242, 242, 1) !default;
+
+$black-300: rgba(38, 40, 44, 1);
+$black-400: rgba(19, 20, 22, 1);
+
+$white-opaque-200: rgba(255, 255, 255, 0.2);
+$white-opaque-400: rgba(255, 255, 255, 0.8);
+
+$grey-dk-000: rgb(149, 147, 150) !default;
+$grey-dk-100: rgb(92, 89, 98) !default;
+$grey-dk-200: rgb(68, 67, 77) !default;
+$grey-dk-250: rgb(48, 45, 54) !default;
+$grey-dk-300: rgb(39, 38, 43) !default;
+
+$grey-lt-000: rgb(245, 246, 250) !default;
+$grey-lt-100: rgb(238, 235, 238) !default;
+$grey-lt-200: rgb(236, 235, 237) !default;
+$grey-lt-300: rgb(230, 225, 232) !default;
+
+$purple-000: rgb(114, 83, 237) !default;
+$purple-100: rgb(94, 65, 208) !default;
+$purple-200: rgb(78, 38, 175) !default;
+$purple-300: rgb(56, 24, 133) !default;
+
+$blue-000: rgb(44, 132, 250) !default;
+$blue-100: rgb(40, 105, 230) !default;
+$blue-200: rgb(38, 76, 175) !default;
+$blue-300: rgb(24, 51, 133) !default;
+
+$green-000: rgb(65, 214, 147) !default;
+$green-100: rgb(17, 181, 132) !default;
+$green-200: rgb(0, 156, 123) !default;
+$green-300: rgb(2, 110, 87) !default;
+
+$yellow-000: rgb(255, 235, 130) !default;
+$yellow-100: rgb(250, 223, 80) !default;
+$yellow-200: rgb(247, 209, 46) !default;
+$yellow-300: rgb(231, 175, 6) !default;
+
+$red-000: rgb(247, 126, 126) !default;
+$red-100: rgb(249, 110, 101) !default;
+$red-200: rgb(233, 76, 76) !default;
+$red-300: rgb(221, 46, 46) !default;
+
+$brown-opaque-100: rgba(40, 21, 11, 0.1);
+$brown-opaque-200: rgba(40, 21, 11, 0.2);
+$brown-opaque-400: rgba(40, 21, 11, 0.4);
+$brown-opaque-600: rgba(40, 21, 11, 0.6);
+$brown-opaque-800: rgba(40, 21, 11, 0.8);
+
+$brown-300: rgba(40, 21, 11, 1);
+
+//
+// ======== Background colors ========
+//
+
+$body-bg-color: rgba(40, 21, 11, 0.01) !default;
+
+$nav-bg-color: rgba(125, 113, 107, 1) !default;
+$nav-logo-bg-color: rgba(64, 34, 17, 1) !default;
+$nav-btn-bg-color: rgba(40, 21, 11, 1) !default;
+$nav-btn-bg-color-hover: rgba(40, 21, 11, 0) !default;
+$nav-btn-bg-color-active: rgba(40, 21, 11, 0.6) !default;
+
+$app-bg-color: rgba(40, 21, 11, 0.1) !default;
+$header-bg-color: rgba(40, 21, 11, 0.2) !default;
+$eye-bg-color: rgba(40, 21, 11, 1) !default;
+$eye-color: rgba(40, 21, 11, 1) !default;
+$eye-aperture-bg-color: rgba(244, 172, 58, 1) !default;
+
+$gradient-bg-color-1: rgba(40, 21, 11, 1);
+$gradient-bg-color-2: rgba(40, 21, 11, 0.1);
+
+$sidebar-color: $grey-lt-000 !default;
+$search-background-color: $white !default;
+$table-background-color: $white !default;
+$code-background-color: $grey-lt-000 !default;
+$feedback-color: darken($sidebar-color, 3%) !default;
+
+//
+// ======== Text colors ========
+//
+
+$body-text-color: $grey-dk-100 !default;
+$body-heading-color: $grey-dk-300 !default;
+
+$search-result-preview-color: $grey-dk-000 !default;
+
+$btn-color: rgba(255, 255, 255, 0.8) !default;
+$btn-color-hover: rgba(255, 255, 255, 1);
+$btn-color-active: rgba(255, 255, 255, 0.8);
+
+$eye-color: rgba(255, 255, 255, 0.8);
+
+$link-color: rgba(137, 105, 58, 0.8);
+$link-color-hover: rgba(137, 105, 58, 1);
+
+//
+// ======== Spacing ========
+//
+
+$spacing-unit: 1rem; // 1rem == 16px
+
+$spacers: (
+  sp-0: 0,
+  sp-1: $spacing-unit * 0.25,
+  sp-2: $spacing-unit * 0.5,
+  sp-3: $spacing-unit * 0.75,
+  sp-4: $spacing-unit,
+  sp-5: $spacing-unit * 1.5,
+  sp-6: $spacing-unit * 2,
+  sp-7: $spacing-unit * 2.5,
+  sp-8: $spacing-unit * 3,
+  sp-9: $spacing-unit * 3.5,
+  sp-10: $spacing-unit * 4,
+) !default;
+
+$sp-1: map-get($spacers, sp-1) !default; // 0.25 rem == 4px
+$sp-2: map-get($spacers, sp-2) !default; // 0.5  rem == 8px
+$sp-3: map-get($spacers, sp-3) !default; // 0.75 rem == 12px
+$sp-4: map-get($spacers, sp-4) !default; // 1    rem == 16px
+$sp-5: map-get($spacers, sp-5) !default; // 1.5  rem == 24px
+$sp-6: map-get($spacers, sp-6) !default; // 2    rem == 32px
+$sp-7: map-get($spacers, sp-7) !default; // 2.5  rem == 40px
+$sp-8: map-get($spacers, sp-8) !default; // 3    rem == 48px
+$sp-9: map-get($spacers, sp-9) !default; // 3.5  rem == 56px
+$sp-10: map-get($spacers, sp-10) !default; // 4  rem == 64px
+
+//
+// ======== Grid system ========
+//
+
+$gutter-spacing: $sp-6 !default;
+$gutter-spacing-sm: $sp-4 !default;
+$nav-width: 16.5em !default;
+$nav-width-md: 15.5em !default;
+$nav-list-item-height: $sp-6 !default;
+$nav-list-item-height-sm: $sp-8 !default;
+$nav-list-expander-right: true;
+$content-width: 50em !default;
+$header-height: 3.75em !default;
+$search-results-width: $content-width - $nav-width !default;
+$transition-duration: 0.4s;
+
+//
+// ======== Borders ========
+//
+
+$border-color: rgba(0, 0, 0, 0.2) !default;
+$border-color-tooltip-arrow: rgba(38, 40, 44, 1) transparent transparent transparent;
+$border: 0.0625em solid $border-color !default;
+$border-radius: 0.4em !default;
+
+//
+// ======== Media queries ========
+//
+
+$media-queries: (
+  xs: 20em,
+  sm: 31.25em,
+  md: $content-width,
+  lg: $content-width + $nav-width,
+  xl: 87.5em,
+) !default;

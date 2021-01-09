@@ -1,0 +1,59 @@
+/* ======== Sections ======== */
+
+.Section-1 {
+  @include flex-column;
+  width: 20%;
+  border-right: $border;
+  .sign {
+    @include flex-column-center;
+    align-content: center;
+    padding: $sp-2;
+    hr {
+      margin: 1em;
+    }
+    input {
+      padding: $sp-4;
+      margin: $sp-2 auto;
+      border-radius: $border-radius;
+    }
+    .submit-btn {
+      padding: $sp-2;
+      margin: $sp-2 auto;
+      font-size: $font-size-6;
+      background-color: $brown-opaque-200;
+      border: $border;
+      border-radius: $border-radius;
+      &:hover {
+        background-color: $brown-opaque-600;
+        cursor: pointer;
+      }
+    }
+    #sign {
+      margin: 0.5em auto;
+      padding: $sp-2;
+      text-align: center;
+      border: $border;
+      border-radius: $border-radius;
+    }
+  }
+
+  .Section-1-list {
+    @include inline-flex-column;
+    padding: $sp-2;
+  }
+}
+
+.Section-2 {
+  @include inline-flex-column;
+  width: 80%;
+  .fuck-off {
+    @include transition-fast;
+    text-decoration: none;
+    &:hover {
+      @include transform-scale-1;
+      font-style: italic;
+      font-weight: 800;
+      font-size: 1.4em;
+    }
+  }
+}

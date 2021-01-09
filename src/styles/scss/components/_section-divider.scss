@@ -1,0 +1,28 @@
+.section-divider-div {
+  display: block;
+  color: $red-200;
+  text-align: center;
+  margin: 2em 0;
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    font-weight: 600;
+    margin: 1.5em 40%;
+    box-shadow: 1em 1em 10em rgba(0, 0, 0, 0.3);
+    padding: 0.5em;
+    border-radius: 1em;
+  }
+  a {
+    color: inherit;
+  }
+  .section-divider {
+    font-weight: 300;
+    padding: 0.2em 0;
+    margin: 0 auto;
+    p {
+      padding: 0;
+    }
+  }
+}

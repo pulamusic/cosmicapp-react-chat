@@ -9,6 +9,8 @@ import S from 'shorti'
 import _ from 'lodash'
 import { Input } from 'react-bootstrap'
 
+// ======== main App ========
+
 class App extends Component {
 
   constructor() {
@@ -76,10 +78,11 @@ class App extends Component {
   }
 
   createMessage() {
-    const data = this.state.data
-    const messages = data.messages
-    const socket = io()
-    const message_text = this.refs.message.refs.input.value.trim()
+    const data = this.state.data,
+      messages = data.messages,
+      socket = io(),
+      message_text = this.refs.message.refs.input.value.trim()
+
     if (!message_text)
       return
     const message_emit = {
@@ -119,6 +122,7 @@ class App extends Component {
       this.setAuthor()
   }
 
+  // ======== render ========
   render() {
     const data = this.state.data
     let form_input
@@ -159,6 +163,8 @@ class App extends Component {
       ...S('h-' + (window.innerHeight - 140)),
       overflowY: 'scroll'
     }
+
+    // ======== return ========
     return (
       <div>
         <div style={ S('pl-15') }>
@@ -176,5 +182,7 @@ class App extends Component {
     )
   }
 }
+
+// ======== output to main page ========
 const app = document.getElementById('app')
 render(<App />, app)

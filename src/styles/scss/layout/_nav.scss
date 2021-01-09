@@ -1,0 +1,61 @@
+/* ======== Nav ======== */
+
+.Nav {
+  @include reset-0;
+  @include flex-row-center;
+  align-content: stretch;
+  @include fixed;
+  background-color: $nav-bg-color;
+  width: 100%;
+}
+
+.Nav-logo {
+  @include reset-0;
+  @include flex-row;
+  justify-content: flex-start;
+  align-items: center;
+  background-position: center;
+  background-color: $nav-logo-bg-color;
+  img {
+    @include inline-flex-center;
+    @include reset-0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.Nav-navbar {
+  @include flex-row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  @include full-width-height;
+  overflow-y: hidden;
+  font-weight: $font-weight-2;
+  a {
+    @include full-width-height;
+  }
+  button {
+    flex: 1 100%;
+    @include full-width-height;
+    padding: $sp-4 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: $font-size-7;
+    color: $btn-color;
+    background-color: $nav-btn-bg-color;
+    @include transition-fast;
+    &:hover {
+      @include transform-scale-1;
+      background-color: $nav-btn-bg-color-hover;
+      color: $btn-color-hover;
+    }
+    &:active {
+      @include transform-scale-1;
+      background-color: $nav-btn-bg-color-active;
+      color: $btn-color-active;
+      border-radius: $border-radius;
+    }
+  }
+}

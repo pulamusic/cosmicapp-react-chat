@@ -1,0 +1,39 @@
+/* ======== Cylon Eye ======== */
+
+.Eye {
+  @include flex-row-center;
+  align-content: center;
+  @include full-width-height;
+  color: $eye-color;
+  background-color: $eye-bg-color;
+  @include animation-med(fadeBg);
+}
+
+.Eye-view-port {
+  @include flex-row;
+  flex-wrap: nowrap;
+  align-content: center;
+  background-color: $eye-bg-color;
+  height: $sp-10;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Eye-cylon-eye {
+  @include inline-flex-center;
+  background-color: $eye-aperture-bg-color;
+  background-image: linear-gradient(to right,
+      $gradient-bg-color-1 25%,
+      $gradient-bg-color-2 50%,
+      $gradient-bg-color-1 75%);
+  height: 100%;
+  width: 20%;
+  @include animation-slow(moveEye);
+  p {
+    color: $eye-color;
+    font-weight: $font-weight-5;
+    font-size: $font-size-7;
+    margin: auto 0;
+    @include animation-slow(eyeText);
+  }
+}

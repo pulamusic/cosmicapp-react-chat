@@ -1,3 +1,15 @@
+> Jim Carroll |
+> 01/08/2021 |
+> [GitHub Profile](https://github.com/pulamusic)
+
+---
+
+# cosmicapp-react-chat
+
+I setup a CosmicJS account
+
+---
+
 ## React Chat App
 ![Screencast](https://github.com/tonyspiro/react-chat-app/blob/master/screencast.gif)
 

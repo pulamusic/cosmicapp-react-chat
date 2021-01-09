@@ -1,8 +1,10 @@
 // app-server.js
 import express from 'express'
 const app = express()
+
 // Set port
 app.set('port', process.env.PORT || 3000)
+
 // Static files
 app.use(express.static('public'))
 const http = require('http').Server(app)

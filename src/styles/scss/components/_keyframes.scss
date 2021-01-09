@@ -1,0 +1,14 @@
+@keyframes eyeText {
+  from { color: $brown-300; font-weight: $font-weight-6; font-size: $font-size-7;  }
+  to { color: $brown-opaque-100; font-weight: $font-weight-2; font-size: $font-size-1; }
+}
+
+@keyframes moveEye {
+  from { margin-left: -20%; }
+  to { margin-left: 105%; }
+}
+
+@keyframes fadeBg {
+  from {color: $white-opaque-400; background-color: $brown-300;}
+  to {color: $white-opaque-200; background-color: $brown-opaque-200;}
+}

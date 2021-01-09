@@ -1,3 +1,3 @@
 // app-entry.js
 require('babel-register')
-require('./app-server.js')
+require('../app-server.js')
